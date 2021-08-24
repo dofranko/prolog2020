@@ -4,7 +4,7 @@ board(L) :-
     rysuj(L, N, N), !.
 
 %Główna "funkcja" rysująca
-rysuj(_, _, 0).
+rysuj(_, _, 0). 
 rysuj(L, N, Height) :-
     (
         (0 =:= Height mod 2) -> linia_biały(L, Height); linia_czarny(L, Height)
